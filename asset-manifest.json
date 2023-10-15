@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/TMBD-Movies/static/css/main.da7c4bfb.css",
+    "main.js": "/TMBD-Movies/static/js/main.a2dd8069.js",
+    "static/js/787.438e063a.chunk.js": "/TMBD-Movies/static/js/787.438e063a.chunk.js",
+    "static/media/slider-control.jpg": "/TMBD-Movies/static/media/slider-control.014bcebbc3fce62d7274.jpg",
+    "static/media/25533.jpg": "/TMBD-Movies/static/media/25533.c7d1addd09b597ea2098.jpg",
+    "static/media/slider-banner.jpg": "/TMBD-Movies/static/media/slider-banner.640d61fb023574c90ce1.jpg",
+    "static/media/noIMG.png": "/TMBD-Movies/static/media/noIMG.baba1a7394e8054d69cf.png",
+    "static/media/tmdb-logo.svg": "/TMBD-Movies/static/media/tmdb-logo.e84bbd157997d9a924fc00e7c2e6fc34.svg",
+    "index.html": "/TMBD-Movies/index.html",
+    "main.da7c4bfb.css.map": "/TMBD-Movies/static/css/main.da7c4bfb.css.map",
+    "main.a2dd8069.js.map": "/TMBD-Movies/static/js/main.a2dd8069.js.map",
+    "787.438e063a.chunk.js.map": "/TMBD-Movies/static/js/787.438e063a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da7c4bfb.css",
+    "static/js/main.a2dd8069.js"
+  ]
+}
