@@ -1,0 +1,82 @@
+.HomePage {
+  background-color: var(--banner-background);
+}
+.grid-content-pages {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 12px;
+}
+
+/* Details Page */
+
+.background_detail {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+.background_detail::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(to bottom,#0c0c0cf2  59%,#222123bd 100%)
+}
+.details {
+  gap: 15px;
+}
+.detail-img img {
+  position: sticky;
+  top: 0;
+  width: 301px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+@media (max-width: 897px) {
+  div.details {
+    padding: 10px !important;
+    flex-direction: column;
+  }
+}
+@media (max-width: 424px) {
+  .details {
+    flex-direction: column;
+  }
+  .detail-img img {
+    width: 100%;
+  }
+  .details .movie-name {
+    font-size: 4rem;
+  }
+  .column-mobile {
+    flex-direction: column;
+  }
+}
+
+.slider_details {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+}
+/* Player Page */
+.iframe {
+  width: 100%;
+  height: 100%;
+}
+.video-wrapper {
+  height: calc(100vh - 150px);
+}
+.play_movie_button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}

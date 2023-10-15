@@ -1,0 +1,115 @@
+.big-banner {
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  height: 700px;
+}
+.banner-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.banner-item::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-image: linear-gradient(
+    90deg,
+    hsl(220, 17%, 7%) 0%,
+    hsla(220, 17%, 7%, 0) 100%
+  );
+}
+.banner-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.banner-item .banner-desc {
+  position: absolute;
+  top: 32%;
+  left: 100px;
+  z-index: 1;
+  width: 400px;
+}
+.overview-banner,
+.heading-banner {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+}
+.big-banner .arrow-left,
+.big-banner .arrow-right {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  box-shadow: 1px 1px 25px red;
+  background-color: transparent !important;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.big-banner .arrow-right {
+  right: 15px;
+}
+.big-banner .arrow-left {
+  left: 15px;
+}
+.big-banner .arrow-left img,
+.big-banner .arrow-right img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+/* ----------------- */
+.slider-card {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  overflow-x: hidden;
+}
+.slider-inner {
+  position: absolute;
+  bottom: 2px;
+  /* right: 0; */
+  max-width: 500px;
+}
+
+.card-film img {
+  width: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+@media (max-width: 767px) {
+  .banner-item .banner-desc {
+    left: 40px;
+  }
+}
+@media (max-width: 463px) {
+  .banner-item .banner-desc {
+    left: 10px;
+    width: 90%;
+    left: 9px;
+  }
+}
+@media (max-width: 777px) {
+  .big-banner .arrow-left,
+  .big-banner .arrow-right {
+    display: none;
+  }
+}

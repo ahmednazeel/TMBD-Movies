@@ -1,0 +1,47 @@
+.side-left {
+  width: 233px;
+  height: 100%;
+  z-index: 3;
+  position: sticky;
+  left: 0;
+  top: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  overflow-y: scroll;
+  padding-top: 50px;
+}
+button.border-none {
+  display: none;
+}
+@media (max-width: 656px) {
+  .side-left {
+    position: absolute;
+    width: 50%;
+    height: calc(100% - 92px);
+    top: 92px;
+    left: -330px;
+  }
+  .side-left.active {
+    left: 0;
+  }
+  button.border-none {
+    display: block;
+  }
+}
+.gerne-item {
+  border: none;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.gerne-item:hover {
+  color: var(--c-two);
+}
+.copy {
+  border-block: 1px dashed #6666;
+}
